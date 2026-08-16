@@ -5,7 +5,7 @@ Frozen assets for the Yunmeng state-architecture Ascend smoke/pilot.
 - Source code commit: `4c4321ad4641135ede3e69a7ca576472115a3308`
 - The checkpoint is stored with Git LFS.
 - JSONL files are stored byte-for-byte without line-ending conversion.
-- Verify all four entries in `SHA256SUMS` before running any episode.
+- Verify all entries in `SHA256SUMS` before running any episode.
 - Ascend outputs remain `SMOKE_NOT_CLAIM_ELIGIBLE` and must not be mixed with
   the L20 formal matrix.
 
@@ -25,4 +25,6 @@ install -D -m 0644 data/state_architecture/counterfactual_branch_v1.jsonl \
   /app/yunmeng/data/state_architecture/counterfactual_branch_v1.jsonl
 install -D -m 0644 data/state_architecture/protected_retention_v1.jsonl \
   /app/yunmeng/data/state_architecture/protected_retention_v1.jsonl
+install -D -m 0644 data/wiki_zh_10k.vocab.json \
+  /app/yunmeng/data/wiki_zh_10k.vocab.json
 ```
